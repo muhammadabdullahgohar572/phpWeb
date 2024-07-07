@@ -1,27 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<style>
-.carousel-margin-top {
-    margin-top: 0px;
-}
-</style>
 
 <body>
     <div id="carouselExample" class="carousel slide carousel-margin-top">
         <div class="carousel-inner">
 
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="../img/1687433357411-rently.png" class="d-block w-100 mt-10" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <img src="../img/hero.jpeg" class="d-block w-100 mt-10" alt="...">
             </div>
         </div>
@@ -34,9 +27,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
