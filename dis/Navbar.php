@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -45,13 +46,28 @@
         transition: background-color 0.3s ease;
         cursor: pointer;
         font-weight: 600;
-        padding: 15px;
+        padding: 10px;
+
+    }
+
+    .login-btn,
+    .signup-btn button {
+
+        color: white;
+    }
+
+    .signup-btn,
+    .login-btn button {
+
+        color: white;
     }
 
     .login-btn:hover,
     .signup-btn:hover {
         background-color: #ff00a2;
         transition: background-color 0.3s ease;
+        cursor: pointer;
+        color: white;
     }
 
     .navbar-nav .nav-item a.nav-link {
@@ -111,8 +127,12 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <button class="btn login-btn">Login</button>
-                    <button class="btn signup-btn">Signup</button>
+                    <div class="login-btn">
+                        <button class="btn ">Login</button>
+                    </div>
+                    <div class="signup-btn">
+                        <button class="btn ">Signup</button>
+                    </div>
                 </form>
             </div>
         </div>
