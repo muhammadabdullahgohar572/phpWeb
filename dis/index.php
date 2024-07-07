@@ -1,4 +1,7 @@
 <!-- https://rently.pk/ -->
+<!-- git remote add origin https://github.com/muhammadabdullahgohar572/phpWeb.git
+git branch -M main
+git push -u origin main -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +14,7 @@
 </head>
 
 
-<?php  require "./Navbar.php"?>
+<?php require "./Navbar.php" ?>
 
 <body>
 
