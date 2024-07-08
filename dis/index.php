@@ -22,6 +22,10 @@ git push -u origin main -->
         <?php require "./Hero.php" ?>
     </div>
 
+    <div>
+        <?php require "./Car.php" ?>
+
+    </div>
 </body>
 
 </html>
