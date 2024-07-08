@@ -23,7 +23,6 @@
         background-color: aliceblue;
         color: black;
         border: none;
-        /* Optional: removes dropdown border */
     }
 
     .custom-navbar-bg .dropdown-menu .dropdown-item {
@@ -35,35 +34,10 @@
         color: white !important;
     }
 
-    .login-btn,
-    .signup-btn {
-        margin-right: 10px;
-        background-color: #3a0830;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-        font-weight: 600;
-        padding: 10px;
 
-    }
 
-    .login-btn,
-    .signup-btn button {
-
-        color: white;
-    }
-
-    .signup-btn,
-    .login-btn button {
-
-        color: white;
-    }
-
-    .login-btn:hover,
-    .signup-btn:hover {
+    .btn1:hover,
+    .btn1:hover {
         background-color: #ff00a2;
         transition: background-color 0.3s ease;
         cursor: pointer;
@@ -72,13 +46,26 @@
 
     .navbar-nav .nav-item a.nav-link {
         font-size: 18px;
-        /* Set font size to 23px */
+    }
+
+    .btn1 {
+        color: white;
+        margin-right: 10px;
+        background-color: #3a0830;
+        color: aliceblue;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 20px;
     }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar-bg">
+    <nav class="navbar navbar-expand-lg custom-navbar-bg fixed">
         <div class="container-fluid p-4">
             <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" width="200px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -115,23 +102,21 @@
                         <a class="nav-link" href="#">Corporate Enquiries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Our Clients</a>
+                        <a class="nav-link" href="#">Our Clients</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Blog
-                        </a>
+                        <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#"> Contact Us
-                        </a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <div class="login-btn">
-                        <button class="btn ">Login</button>
+                        <button class="btn1">Login</button>
                     </div>
                     <div class="signup-btn">
-                        <button class="btn ">Signup</button>
+                        <button class="btn1">Signup</button>
                     </div>
                 </form>
             </div>

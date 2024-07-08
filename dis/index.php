@@ -18,12 +18,12 @@ git push -u origin main -->
 
 <body>
     <?php require "./Navbar.php" ?>
-    <div class="">
-        <?php require "./Hero.php" ?>
-    </div>
+
+    <?php require "./Hero.php" ?>
+
 
     <div>
-        <?php require "./Car.php" ?>
+        <?php require "./input.php" ?>
 
     </div>
 </body>

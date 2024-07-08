@@ -10,7 +10,7 @@
 <body>
 
     <div class="">
-        <h1> What type of car are you looking for? </h1>
+        <h3> What type of car are you looking for? </h3>
     </div>
 
 </body>
