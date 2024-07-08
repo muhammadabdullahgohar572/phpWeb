@@ -11,25 +11,88 @@
     position: absolute;
 }
 
-.bodyy {
-    position: relative;
-    width: 100%;
-
-    background-color: #f1f1f1;
+.container {
+    background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
 
 
+.btn1 {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #084415;
+}
 
 
+@media screen and (min-width:765px) {
+    .bodyy {
+        position: relative;
+        width: 30%;
+        /* background-color: #f1f1f1; */
+        left: 450px;
+        top: 280px;
+    }
 
+    input[type="text"],
+    input[type="datetime-local"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-left: 25px;
+    }
+}
 
+@media screen and (max-width:375px) {
+    .bodyy {
+        position: relative;
+        width: 100%;
+        /* background-color: #f1f1f1; */
+        left: 0px;
+        top: 200px;
+        padding: 10px;
+    }
 
+    input[type="text"],
+    input[type="datetime-local"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-left: 0px;
+    }
+}
 
-
-
+@media screen and (max-width:425px) {
+    .bodyy {
+        position: relative;
+        width: 100%;
+        /* background-color: #f1f1f1; */
+        left: 0px;
+        top: 200px;
+    }
 }
 </style>
 
@@ -59,7 +122,7 @@
 
         <div class="bodyy">
             <div class="container">
-                <form>
+                <form class="test">
                     <label for="pickup-location">Pick-Up Location:</label>
                     <input type="text" id="pickup-location" name="pickup-location" required>
 
