@@ -7,9 +7,21 @@
     <title>Travel Planner</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-    #map {
-        height: 400px;
-        width: 100%;
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .form-label {
+        font-weight: bold;
     }
     </style>
 </head>
@@ -37,7 +49,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        <div id="map" class="my-4"></div>
+
     </div>
 
 
