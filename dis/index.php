@@ -22,7 +22,9 @@ git push -u origin main -->
     <?php require "./input.php" ?>
     <?php require "./Car.php" ?>
     <?php require "./Text.php" ?>
-    <?php require "./slider.php"?>
+    <?php require "./slider.php" ?>
+    <?php require "./Footer.php" ?>
+
 
 
 </body>
