@@ -21,6 +21,7 @@ git push -u origin main -->
     <?php require "./Hero.php" ?>
     <?php require "./input.php" ?>
     <?php require "./Car.php" ?>
+    <?php require "./Text.php" ?>
 
 
 </body>
