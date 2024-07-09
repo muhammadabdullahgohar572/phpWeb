@@ -5,11 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    body {
-        background-color: #f8f9fa;
-        font-family: Arial, sans-serif;
-    }
-
     .card {
         border: none;
         margin: 20px;
@@ -133,6 +128,45 @@
             <div class="card">
                 <div class="card-body">
                     <img src="../img/Slider/1676397966214-car-rental-north-karachi.jpg" alt="Image 3">
+                    <p class="text-muted">Feb 15, 2023</p>
+                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
+                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
+                        should look into reli...</p>
+                    <button class="read-more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="containr">
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../img/Slider/1693984416156-rent-corolla-karachi.jpg" alt="Image 1">
+                    <p class="text-muted">Feb 15, 2023</p>
+                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
+                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
+                        should look into reli...</p>
+                    <button class="read-more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card1">
+                <div class="card1-body">
+                    <img src="../img/Slider/1676632675334-karachi-lahore-car-rental (1).jpg" alt="Image 2">
+                    <p class="text-muted">Feb 15, 2023</p>
+                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
+                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
+                        should look into reli...</p>
+                    <button class="read-more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../img/Slider/1.jpg" alt="Image 3">
                     <p class="text-muted">Feb 15, 2023</p>
                     <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
                     <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
