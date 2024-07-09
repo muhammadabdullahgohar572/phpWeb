@@ -90,12 +90,6 @@ h1 {
 .view-all-btn button:hover {
     background-color: #4B0440;
 }
-
-.con {
-    padding: 30px;
-    border-radius: 8px;
-
-}
 </style>
 
 <body>
@@ -133,7 +127,7 @@ h1 {
     </div>
 
 
-    <div class="con mt-5">
+    <div class="mt-5" style="padding: 30px; border-radius: 8px;">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -239,9 +233,10 @@ h1 {
                 </div>
             </div>
         </div>
-        <div class="view-all-btn">
-            <button>View All</button>
-        </div>
+    </div>
+    <div class="view-all-btn">
+        <button>View All</button>
+    </div>
 </body>
 
 </html>

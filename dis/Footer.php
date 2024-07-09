@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .footer-link:hover {
+        text-decoration: underline;
+        color: #ffcc00;
+        /* Change this to your preferred hover color */
+    }
+    </style>
 </head>
 
 <body>
     <!-- Remove the container if you want to extend the Footer to full width. -->
-    <div class=" my-5" style="background-color:#7e246c">
+    <div class="my-5" style="background-color:#7e246c">
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white" style="background-color:#7e246c; color: white;">
             <!-- Grid container -->
@@ -23,7 +41,7 @@
                             <h6 class="text-uppercase mb-4 font-weight-bold">
                                 Company name
                             </h6>
-                            <p>
+                            <p style="cursor: pointer;">
                                 Here you can use rows and columns to organize your footer
                                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit.
@@ -37,16 +55,16 @@
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
                             <p>
-                                <a class="text-white">MDBootstrap</a>
+                                <a class="footer-link">MDBootstrap</a>
                             </p>
                             <p>
-                                <a class="text-white">MDWordPress</a>
+                                <a class="footer-link">MDWordPress</a>
                             </p>
                             <p>
-                                <a class="text-white">BrandFlow</a>
+                                <a class="footer-link">BrandFlow</a>
                             </p>
                             <p>
-                                <a class="text-white">Bootstrap Angular</a>
+                                <a class="footer-link">Bootstrap Angular</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -59,16 +77,16 @@
                                 Useful links
                             </h6>
                             <p>
-                                <a class="text-white">Your Account</a>
+                                <a class="footer-link">Your Account</a>
                             </p>
                             <p>
-                                <a class="text-white">Become an Affiliate</a>
+                                <a class="footer-link">Become an Affiliate</a>
                             </p>
                             <p>
-                                <a class="text-white">Shipping Rates</a>
+                                <a class="footer-link">Shipping Rates</a>
                             </p>
                             <p>
-                                <a class="text-white">Help</a>
+                                <a class="footer-link">Help</a>
                             </p>
                         </div>
 
@@ -78,10 +96,14 @@
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                            <p style="cursor: pointer "><i class=" fas fa-home mr-3"></i> New York,
+                                NY
+                                10012,
+                                US
+                            </p>
+                            <p style="cursor: pointer "><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p style="cursor: pointer "><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p style="cursor: pointer "><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
                         </div>
                         <!-- Grid column -->
                     </div>
@@ -99,12 +121,10 @@
                             <!-- Copyright -->
                             <div class="p-3">
                                 © 2020 Copyright:
-                                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                                <a class="footer-link" href="https://mdbootstrap.com/">MDBootstrap.com</a>
                             </div>
                             <!-- Copyright -->
                         </div>
-                        <!-- Grid column -->
-
                         <!-- Grid column -->
 
                         <!-- Grid column -->
