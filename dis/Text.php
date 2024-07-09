@@ -34,7 +34,7 @@ h1 {
     font-weight: 700;
 }
 
-.containe {
+.cont {
 
     margin: 0 auto;
     padding: 20px;
@@ -80,18 +80,26 @@ h1 {
     background-color: #7e246c;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 30px 20px 30px;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .view-all-btn button:hover {
-    background-color: #5e1b54;
+    background-color: #4B0440;
+}
+
+.con {
+    padding: 30px;
+    border-radius: 8px;
+
 }
 </style>
 
 <body>
-    <div class="containe">
+    <div class="cont">
         <h1>Why Rent A Car With Rently?</h1>
         <p>Rently Car Rental Service is widely regarded as one of the best Car Rental Service Providers serving not only
             Karachi but other major cities of Pakistan as well.</p>
@@ -124,7 +132,8 @@ h1 {
         <h1>FREQUENTLY ASKED QUESTIONS</h1>
     </div>
 
-    <div class="container mt-5">
+
+    <div class="con mt-5">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -139,12 +148,9 @@ h1 {
                     <div class="accordion-body">
                         The car with driver can be rented by anyone above the age of 16. However, in case of self-drive,
                         minimum age for hiring a car is 21 years and your license needs to be at least 1 year old. If
-                        you
-                        are a resident of Pakistan, you need to have a valid driving license along with NIC. If you are
-                        on a
-                        tourist visa then you need to have a valid home country license OR an international driving
-                        license
-                        and valid passport with visa stamp.
+                        you are a resident of Pakistan, you need to have a valid driving license along with NIC. If you
+                        are on a tourist visa then you need to have a valid home country license OR an international
+                        driving license and valid passport with visa stamp.
                     </div>
                 </div>
             </div>
@@ -160,8 +166,7 @@ h1 {
                     aria-labelledby="panelsStayOpen-headingTwo">
                     <div class="accordion-body">
                         Yes, you may book any car available on our website, with driver. However, the self-drive option
-                        is
-                        currently limited to Suzuki Wagon R and Daihatsu Mira.
+                        is currently limited to Suzuki Wagon R and Daihatsu Mira.
                     </div>
                 </div>
             </div>
@@ -207,13 +212,10 @@ h1 {
                     aria-labelledby="panelsStayOpen-headingFive">
                     <div class="accordion-body">
                         In case of Self-Driver option, we cover the small damages from your security deposit. Since all
-                        our
-                        cars are insured, the bigger damages are covered by the insurance. However, the debt charged by
-                        the
-                        insurance company shall be paid by the customer. Furthermore, if the car stays at the workshop
-                        for
-                        repairs / damage caused by the accident, the rent for that period shall also be paid by the
-                        customer.
+                        our cars are insured, the bigger damages are covered by the insurance. However, the debt charged
+                        by the insurance company shall be paid by the customer. Furthermore, if the car stays at the
+                        workshop for repairs / damage caused by the accident, the rent for that period shall also be
+                        paid by the customer.
                     </div>
                 </div>
             </div>
@@ -231,18 +233,15 @@ h1 {
                         Customers are responsible for paying for their own fuel consumption. Each car is provided with a
                         level of fuel and customers have to return the vehicle with the same level of fuel as they were
                         given. We also provide an option to the customers, where they can pay for the number of
-                        kilometers
-                        done by the car at the specified rates for each car category, starting from the point the car
-                        leaves
-                        the office / Car Owner’s / Driver’s location.
+                        kilometers done by the car at the specified rates for each car category, starting from the point
+                        the car leaves the office / Car Owner’s / Driver’s location.
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="view-all-btn">
-        <button>View All</button>
-    </div>
+        <div class="view-all-btn">
+            <button>View All</button>
+        </div>
 </body>
 
 </html>
