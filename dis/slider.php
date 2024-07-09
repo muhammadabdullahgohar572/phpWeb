@@ -103,23 +103,12 @@
         <div class="card-wrapper">
             <div class="card">
                 <div class="card-body">
-                    <img src="../img/Slider/1674283145609-clifton-karachi.jpg" alt="Image 1">
+                    <img src="../img/Slider/1674283145609-clifton-karachi.jpg" alt="Explore Clifton, Karachi">
                     <p class="text-muted">Feb 15, 2023</p>
-                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
-                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
-                        should look into reli...</p>
-                    <button class="read-more-btn">Read more</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-wrapper">
-            <div class="card1">
-                <div class="card1-body">
-                    <img src="../img/Slider/1676880265059-Can Rent a Car in Gulistan-e-Johar.jpg" alt="Image 2">
-                    <p class="text-muted">Feb 15, 2023</p>
-                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
-                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
-                        should look into reli...</p>
+                    <h5 class="card-title">Discover How to Rent a Car in Gulistan-e-Johar</h5>
+                    <p class="card-text">Explore the bustling streets of Gulistan-e-Johar, Karachi's vibrant
+                        neighborhood. Find reliable car rental services to make your journey seamless and enjoyable...
+                    </p>
                     <button class="read-more-btn">Read more</button>
                 </div>
             </div>
@@ -127,11 +116,24 @@
         <div class="card-wrapper">
             <div class="card">
                 <div class="card-body">
-                    <img src="../img/Slider/1676397966214-car-rental-north-karachi.jpg" alt="Image 3">
+                    <img src="../img/Slider/1676880265059-Can Rent a Car in Gulistan-e-Johar.jpg"
+                        alt="Travel through Gulistan-e-Johar">
                     <p class="text-muted">Feb 15, 2023</p>
-                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
-                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
-                        should look into reli...</p>
+                    <h5 class="card-title">Effortless Car Rentals in Gulistan-e-Johar</h5>
+                    <p class="card-text">Navigate through one of Karachi's most populous areas with ease. Learn about
+                        the best car rental options available for your travel needs...</p>
+                    <button class="read-more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../img/Slider/1676397966214-car-rental-north-karachi.jpg" alt="North Karachi Car Rentals">
+                    <p class="text-muted">Feb 15, 2023</p>
+                    <h5 class="card-title">Top Car Rental Services in Gulistan-e-Johar</h5>
+                    <p class="card-text">Gulistan-e-Johar, a lively neighborhood in Karachi, offers various car rental
+                        options. Discover the best services to ensure a comfortable and convenient trip...</p>
                     <button class="read-more-btn">Read more</button>
                 </div>
             </div>
@@ -142,23 +144,11 @@
         <div class="card-wrapper">
             <div class="card">
                 <div class="card-body">
-                    <img src="../img/Slider/1693984416156-rent-corolla-karachi.jpg" alt="Image 1">
+                    <img src="../img/Slider/1693984416156-rent-corolla-karachi.jpg" alt="Rent a Corolla in Karachi">
                     <p class="text-muted">Feb 15, 2023</p>
-                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
-                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
-                        should look into reli...</p>
-                    <button class="read-more-btn">Read more</button>
-                </div>
-            </div>
-        </div>
-        <div class="card-wrapper">
-            <div class="card1">
-                <div class="card1-body">
-                    <img src="../img/Slider/1676632675334-karachi-lahore-car-rental (1).jpg" alt="Image 2">
-                    <p class="text-muted">Feb 15, 2023</p>
-                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
-                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
-                        should look into reli...</p>
+                    <h5 class="card-title">Easy Car Rentals in Gulistan-e-Johar</h5>
+                    <p class="card-text">Explore the dynamic Gulistan-e-Johar neighborhood with our trusted car rental
+                        services. Find out how to book your ride effortlessly...</p>
                     <button class="read-more-btn">Read more</button>
                 </div>
             </div>
@@ -166,16 +156,30 @@
         <div class="card-wrapper">
             <div class="card">
                 <div class="card-body">
-                    <img src="../img/Slider/1.jpg" alt="Image 3">
+                    <img src="../img/Slider/1676632675334-karachi-lahore-car-rental (1).jpg"
+                        alt="Travel Karachi to Lahore">
                     <p class="text-muted">Feb 15, 2023</p>
-                    <h5 class="card-title">Here’s How You Can Rent a Car in Gulistan-e-Johar</h5>
-                    <p class="card-text">Gulistan-e-Johar is one of the most populous neighborhoods of Karachi. You
-                        should look into reli...</p>
+                    <h5 class="card-title">Renting a Car in Gulistan-e-Johar Made Simple</h5>
+                    <p class="card-text">Gulistan-e-Johar is a key area in Karachi. Discover how easy it is to rent a
+                        car and enjoy your travels without any hassle...</p>
+                    <button class="read-more-btn">Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <img src="../img/Slider/1.jpg" alt="Car Rentals in Karachi">
+                    <p class="text-muted">Feb 15, 2023</p>
+                    <h5 class="card-title">Best Car Rentals in Gulistan-e-Johar</h5>
+                    <p class="card-text">Experience the convenience of renting a car in Gulistan-e-Johar. Learn about
+                        the top services available for a smooth journey...</p>
                     <button class="read-more-btn">Read more</button>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
