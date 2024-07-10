@@ -10,7 +10,7 @@ git push -u origin main -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
 
-    <title>Php</title>
+    <title>Abdullah</title>
     <link rel="stylesheet" href="./output.css">
 </head>
 

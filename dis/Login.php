@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
@@ -73,7 +75,8 @@
 </head>
 
 <body>
-    <?php require "./About.php" ?>
+    <?php require "./Navbar.php" ?>
+
     <div class="login-container">
         <h2 class="login-title">Login</h2>
         <form class="login-form">
@@ -82,7 +85,7 @@
             <button type="submit">Login</button>
         </form>
         <div class="signup-link">
-            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            <p>Don't have an account? <a href="./signup.php">Sign up</a></p>
         </div>
     </div>
 </body>

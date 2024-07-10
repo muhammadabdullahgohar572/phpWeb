@@ -60,6 +60,7 @@
         cursor: pointer;
         font-weight: 600;
         padding: 20px;
+        text-decoration: none;
     }
     </style>
 </head>
@@ -82,7 +83,7 @@
                         <a class="nav-link" href="./about.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Search A Car</a>
+                        <a class="nav-link" href="./Car1.php">Search A Car</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -105,23 +106,25 @@
                         <a class="nav-link" href="#">Our Clients</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="./Blog.php">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contactus.php">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <div class="login-btn">
-                        <a href="./Login.php"><button class="btn1">Login</button></a>
-                    </div>
-                    <a href="./signup.php">
-                        <a class="signup-btn">
-                            <button class="btn1">Signup</button>
+
+                    <a class="login-btn btn1 " href="./Login.php">
+                        Login
+                    </a>
             </div>
+
+            <a class="signup-btn btn1" href="./signup.php">
+                Signup
             </a>
-            </form>
         </div>
+        </form>
+
         </div>
     </nav>
 

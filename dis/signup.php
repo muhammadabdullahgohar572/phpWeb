@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <style>
     body {
-       
+
         background-color: #f8f9fa;
         margin: 0;
         padding: 0;
@@ -63,7 +65,8 @@
 
 
 <body>
-    <?php require "./About.php" ?>
+    <?php require "./Navbar.php" ?>
+
     <div class="signup-container">
         <h2 class="signup-title">Signup</h2>
         <form class="signup-form">

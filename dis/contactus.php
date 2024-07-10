@@ -1,10 +1,13 @@
  <!DOCTYPE html>
- <htmng="en">
+ <htm="en">
 
      <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
+
          <title>Contact Us</title>
+
          <style>
          body {
 
@@ -16,10 +19,9 @@
          .contact-container {
              padding: 50px;
              background-color: white;
-             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             justify-content: space-between;
              border-radius: 10px;
-             max-width: 800px;
-             margin: 50px auto;
+             margin: 0;
          }
 
          .contact-title {
@@ -73,38 +75,52 @@
          }
 
          .map-container iframe {
-             width: 100%;
+             width: 80%;
              height: 400px;
              border: none;
              border-radius: 10px;
+         }
+
+         @media screen and (min-width:765px) {
+             .contact-container {
+                 display: grid;
+                 grid-template-columns: repeat(2, 1fr);
+                 justify-content: space-around;
+             }
+
+
          }
          </style>
      </head>
 
      <body>
-         <?php require "./About.php" ?>
+         <?php require "./Navbar.php" ?>
          <div class="contact-container">
-             <h2 class="contact-title">CONTACT US</h2>
-             <div class="contact-info">
-                 <h3>ADDRESS</h3>
-                 <p>Suite No. 106, 1st Floor, Clifton Broadway Building, Clifton, Karachi, Postal Code: 75600, Pakistan
-                 </p>
-                 <h3>CALL</h3>
-                 <p>0092 3000 RENTLY</p>
-                 <p>OR</p>
-                 <p>0092 300 0736859</p>
-             </div>
-             <div class="contact-form">
-                 <h3>GET IN TOUCH</h3>
-                 <form>
-                     <p><input type="text" name="name" placeholder="Name*" required></p>
-                     <p><input type="email" name="email" placeholder="Email Address*" required></p>
-                     <p><input type="tel" name="phone" placeholder="Phone*" required></p>
-                     <p><input type="text" name="company" placeholder="Company (optional)"></p>
-                     <p><textarea name="message" placeholder="Message*" maxlength="300" rows="5" required></textarea>
+             <div>
+                 <h2 class="contact-title">CONTACT US</h2>
+                 <div class="contact-info">
+                     <h3>ADDRESS</h3>
+                     <p>Suite No. 106, 1st Floor, Clifton Broadway Building, Clifton, Karachi, Postal Code: 75600,
+                         Pakistan
                      </p>
-                     <button type="submit">Send Message</button>
-                 </form>
+                     <h3>CALL</h3>
+                     <p>0092 3000 RENTLY</p>
+                     <p>OR</p>
+                     <p>0092 300 0736859</p>
+                 </div>
+                 <div class="contact-form">
+                     <h3>GET IN TOUCH</h3>
+                     <form>
+                         <p><input type="text" name="name" placeholder="Name*" required></p>
+                         <p><input type="email" name="email" placeholder="Email Address*" required></p>
+                         <p><input type="tel" name="phone" placeholder="Phone*" required></p>
+                         <p><input type="text" name="company" placeholder="Company (optional)"></p>
+                         <p><textarea name="message" placeholder="Message*" maxlength="300" rows="5"
+                                 required></textarea>
+                         </p>
+                         <button type="submit">Send Message</button>
+                     </form>
+                 </div>
              </div>
              <div class="map-container">
                  <h3>Find Us Here</h3>
@@ -115,4 +131,4 @@
          </div>
      </body>
 
-     </htmng=>
+     </html>
