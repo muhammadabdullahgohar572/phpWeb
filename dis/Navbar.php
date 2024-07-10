@@ -67,7 +67,7 @@
 <body>
     <nav class="navbar navbar-expand-lg custom-navbar-bg fixed">
         <div class="container-fluid p-4">
-            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" width="200px"></a>
+            <a class="navbar-brand" href="./index.php"><img src="../img/logo.png" alt="logo" width="200px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -76,10 +76,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="./about.php">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Search A Car</a>
@@ -108,18 +108,20 @@
                         <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="./contactus.php">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <div class="login-btn">
-                        <button class="btn1">Login</button>
+                        <a href="./Login.php"><button class="btn1">Login</button></a>
                     </div>
-                    <div class="signup-btn">
-                        <button class="btn1">Signup</button>
-                    </div>
-                </form>
+                    <a href="./signup.php">
+                        <a class="signup-btn">
+                            <button class="btn1">Signup</button>
             </div>
+            </a>
+            </form>
+        </div>
         </div>
     </nav>
 
