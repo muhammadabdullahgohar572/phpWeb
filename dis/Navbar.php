@@ -100,10 +100,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Corporate Enquiries</a>
+                        <a class="nav-link" href="./Corporate.php">Corporate Enquiries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Clients</a>
+                        <a class="nav-link" href="./Ourcleint.php">Our Clients</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./Blog.php">Blog</a>

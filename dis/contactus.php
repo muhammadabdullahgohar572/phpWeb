@@ -130,7 +130,10 @@
                 allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
+    <div>
+        <?php require "./Footer.php" ?>
 
+    </div>
 </body>
 
 </html>
