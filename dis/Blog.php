@@ -262,7 +262,10 @@
             </div>
         </div>
     </div>
+    <div>
+        <?php require "./Footer.php" ?>
 
+    </div>
 </body>
 
 </html>

@@ -141,6 +141,12 @@ ul li {
             <p>We continue to work towards making our mission and vision a reality with your trust and our dedication.
             </p>
         </div>
+
+
+    </div>
+    <div>
+        <?php require "./Footer.php" ?>
+
     </div>
 </body>
 
