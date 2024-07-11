@@ -117,11 +117,11 @@
                     <a class="login-btn btn1 " href="./Login.php">
                         Login
                     </a>
+                    <a class="signup-btn btn1" href="./signup.php">
+                        Signup
+                    </a>
             </div>
 
-            <a class="signup-btn btn1" href="./signup.php">
-                Signup
-            </a>
         </div>
         </form>
 

@@ -74,8 +74,8 @@
     }
 
     .map-container iframe {
-        width: 80%;
-        height: 400px;
+        width: 200px;
+        height: 300px;
         border: none;
         border-radius: 10px;
     }
@@ -85,6 +85,13 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-around;
+        }
+
+        .map-container iframe {
+            width: 80%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
         }
     }
     </style>
@@ -123,6 +130,7 @@
                 allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
+
 </body>
 
 </html>

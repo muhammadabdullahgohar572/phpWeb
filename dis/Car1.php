@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
+    margin: 30px;
 }
 
 .car-card {
@@ -33,6 +33,12 @@ body {
     max-width: 400px;
     flex: 1;
     box-sizing: border-box;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.car-card:hover {
+    background-color: white;
+    transform: scale(1.05);
 }
 
 .car-card img {
@@ -136,7 +142,7 @@ body {
 
     <div class="car-container">
         <div class="car-card">
-            <img src="https://via.placeholder.com/400x200" alt="Mercedes CLA200">
+            <img src="https://rently.pk/content/vehicles/1669809228732-Civic.png" alt="Mercedes CLA200">
             <h3>MERCEDES CLA200</h3>
             <div class="price-info">
                 <p class="original-price">28,000 PKR/day</p>
@@ -154,7 +160,155 @@ body {
             </div>
         </div>
         <div class="car-card">
-            <img src="https://via.placeholder.com/400x200" alt="Honda BRV">
+            <img src="https://rently.pk/content/vehicles/1669809063805-Corolla%20Altis.png" alt="Honda BRV">
+            <h3>HONDA BRV</h3>
+            <div class="price-info">
+                <p class="original-price">10,000 PKR/day</p>
+                <p class="discounted-price">8,000 PKR/day</p>
+                <button class="with-driver-btn">With Driver</button>
+                <p class="free-cancellation">FREE CANCELLATION</p>
+                <p class="self-drive-price">7,000 PKR/day</p>
+                <button class="self-drive-btn">Self Drive</button>
+            </div>
+            <div class="car-details">
+                <p><strong>7 Seats</strong></p>
+                <p><strong>Automatic</strong></p>
+                <p>With Driver (10hrs/day)</p>
+                <p>Self Drive (24hrs)</p>
+                <p>Overtime: PKR 300/hr</p>
+                <p>Refill fuel at the end of the day or pay PKR 40/KM</p>
+                <p>Excluding fuel & overtime charges</p>
+                <a href="#">View Detail</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="car-container">
+        <div class="car-card">
+            <img src="https://rently.pk/content/vehicles/1669809095641-Corolla%20Gli.png" alt="Mercedes CLA200">
+            <h3>MERCEDES CLA200</h3>
+            <div class="price-info">
+                <p class="original-price">28,000 PKR/day</p>
+                <p class="discounted-price">25,000 PKR/day</p>
+                <button class="with-driver-btn">With Driver</button>
+            </div>
+            <div class="car-details">
+                <p><strong>4 Seats</strong></p>
+                <p><strong>Automatic</strong></p>
+                <p>With Driver (10hrs/day)</p>
+                <p>Overtime: PKR 350/hr</p>
+                <p>Refill fuel at the end of the day or pay PKR 50/KM</p>
+                <p>Excluding fuel & overtime charges</p>
+                <a href="#">View Detail</a>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="https://rently.pk/content/vehicles/1669809149112-Yaris.png" alt="Honda BRV">
+            <h3>HONDA BRV</h3>
+            <div class="price-info">
+                <p class="original-price">10,000 PKR/day</p>
+                <p class="discounted-price">8,000 PKR/day</p>
+                <button class="with-driver-btn">With Driver</button>
+                <p class="free-cancellation">FREE CANCELLATION</p>
+                <p class="self-drive-price">7,000 PKR/day</p>
+                <button class="self-drive-btn">Self Drive</button>
+            </div>
+            <div class="car-details">
+                <p><strong>7 Seats</strong></p>
+                <p><strong>Automatic</strong></p>
+                <p>With Driver (10hrs/day)</p>
+                <p>Self Drive (24hrs)</p>
+                <p>Overtime: PKR 300/hr</p>
+                <p>Refill fuel at the end of the day or pay PKR 40/KM</p>
+                <p>Excluding fuel & overtime charges</p>
+                <a href="#">View Detail</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="car-container">
+        <div class="car-card">
+            <img src="https://rently.pk/content/vehicles/1669809421534-A4.png" alt="Mercedes CLA200">
+            <h3>MERCEDES CLA200</h3>
+            <div class="price-info">
+                <p class="original-price">28,000 PKR/day</p>
+                <p class="discounted-price">25,000 PKR/day</p>
+                <button class="with-driver-btn">With Driver</button>
+            </div>
+            <div class="car-details">
+                <p><strong>4 Seats</strong></p>
+                <p><strong>Automatic</strong></p>
+                <p>With Driver (10hrs/day)</p>
+                <p>Overtime: PKR 350/hr</p>
+                <p>Refill fuel at the end of the day or pay PKR 50/KM</p>
+                <p>Excluding fuel & overtime charges</p>
+                <a href="#">View Detail</a>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="https://rently.pk/content/vehicles/1669809063805-Corolla%20Altis.png" alt="Honda BRV">
+            <h3>HONDA BRV</h3>
+            <div class="price-info">
+                <p class="original-price">10,000 PKR/day</p>
+                <p class="discounted-price">8,000 PKR/day</p>
+                <button class="with-driver-btn">With Driver</button>
+                <p class="free-cancellation">FREE CANCELLATION</p>
+                <p class="self-drive-price">7,000 PKR/day</p>
+                <button class="self-drive-btn">Self Drive</button>
+            </div>
+            <div class="car-details">
+                <p><strong>7 Seats</strong></p>
+                <p><strong>Automatic</strong></p>
+                <p>With Driver (10hrs/day)</p>
+                <p>Self Drive (24hrs)</p>
+                <p>Overtime: PKR 300/hr</p>
+                <p>Refill fuel at the end of the day or pay PKR 40/KM</p>
+                <p>Excluding fuel & overtime charges</p>
+                <a href="#">View Detail</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <div class="car-card">
+            <img src="https://rently.pk/content/vehicles/1669808929935-Fortuner.png" alt="Mercedes CLA200">
+            <h3>MERCEDES CLA200</h3>
+            <div class="price-info">
+                <p class="original-price">28,000 PKR/day</p>
+                <p class="discounted-price">25,000 PKR/day</p>
+                <button class="with-driver-btn">With Driver</button>
+            </div>
+            <div class="car-details">
+                <p><strong>4 Seats</strong></p>
+                <p><strong>Automatic</strong></p>
+                <p>With Driver (10hrs/day)</p>
+                <p>Overtime: PKR 350/hr</p>
+                <p>Refill fuel at the end of the day or pay PKR 50/KM</p>
+                <p>Excluding fuel & overtime charges</p>
+                <a href="#">View Detail</a>
+            </div>
+        </div>
+        <div class="car-card">
+            <img src="https://rently.pk/content/vehicles/1669808977491-Land%20Cruiser.png" alt="Honda BRV">
             <h3>HONDA BRV</h3>
             <div class="price-info">
                 <p class="original-price">10,000 PKR/day</p>
