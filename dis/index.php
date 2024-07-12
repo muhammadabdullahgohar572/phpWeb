@@ -26,7 +26,6 @@ git push -u origin main -->
     <?php require "./Footer.php" ?>
 
 
-
 </body>
 
 </html>

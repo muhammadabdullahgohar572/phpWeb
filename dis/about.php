@@ -10,7 +10,7 @@
 </head>
 <style>
 body {
-    font-family: Arial, sans-serif;
+
     line-height: 1.6;
     margin: 0;
     padding: 0;

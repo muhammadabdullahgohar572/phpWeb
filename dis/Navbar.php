@@ -34,9 +34,6 @@
         color: white !important;
     }
 
-
-
-    .btn1:hover,
     .btn1:hover {
         background-color: #ff00a2;
         transition: background-color 0.3s ease;
@@ -45,7 +42,8 @@
     }
 
     .navbar-nav .nav-item a.nav-link {
-        font-size: 18px;
+        font-size: 14px;
+        /* Set the font size smaller */
     }
 
     .btn1 {
@@ -55,11 +53,11 @@
         color: aliceblue;
         border: none;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 13px;
         transition: background-color 0.3s ease;
         cursor: pointer;
         font-weight: 600;
-        padding: 20px;
+        padding: 15px;
         text-decoration: none;
     }
     </style>
@@ -85,20 +83,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./Car1.php">Search A Car</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Vehicles
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./Corporate.php">Corporate Enquiries</a>
                     </li>
@@ -113,18 +97,10 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-
-                    <a class="login-btn btn1 " href="./Login.php">
-                        Login
-                    </a>
-                    <a class="signup-btn btn1" href="./signup.php">
-                        Signup
-                    </a>
+                    <a class="login-btn btn1" href="./Login.php">Login</a>
+                    <a class="signup-btn btn1" href="./signup.php">Signup</a>
+                </form>
             </div>
-
-        </div>
-        </form>
-
         </div>
     </nav>
 
