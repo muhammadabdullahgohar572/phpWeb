@@ -1,9 +1,7 @@
 <?php
 
-
-
-
 $login = false;
+$err = "";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     include "../server/Severconnect.php";
@@ -11,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $password = $_POST['password'];
     $sql = "SELECT * FROM login WHERE Email='$email' AND password='$password'";
     $result = mysqli_query($conn, $sql);
-     if ($result) {
+    if ($result) {
         $num = mysqli_num_rows($result);
         if ($num == 1) {
             $login = true;
@@ -19,25 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $email;
             header("location: ./index.php");
+            exit();
         } else {
-            $err = "Error: " . mysqli_error($conn);
-            // echo $err;
+            $err = "Invalid email or password.";
         }
-     }
-     else{
-        $err = "Error: ". mysqli_error($conn);
-         echo $err;
-     }
-} else {
-    if (!isset($conn)) {
-        $errr = "You must submit the form";
-        // echo $errr;
     } else {
-        $errr = "Error: " . mysqli_error($conn);
-        // echo $errr;
+        $err = "Error: " . mysqli_error($conn);
     }
-    // echo $errr;
-
 }
 ?>
 <!DOCTYPE html>
@@ -46,7 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
@@ -113,25 +98,36 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     .signup-link a:hover {
         text-decoration: underline;
     }
+
+    .alert {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .alert-success {
+        color: white;
+        background-color: #28a745;
+    }
+
+    .alert-danger {
+        color: white;
+        background-color: #dc3545;
+    }
     </style>
 </head>
 
 <body>
-    <?php require "./Navbar.php" ?>
+    <?php require "./Navbar.php"; ?>
+
     <?php
     if ($login) {
-        echo '<div class="alert alert-success" role="alert">
-     <b>Success!</b>You are Logged in
-       </div>';
-    }
-
-    if (!$login) {
-
-        echo '<div class="alert alert-danger" role="alert">
-     <b>Error</b> Please Fill All filed.
-       </div>';
+        echo '<div class="alert alert-success" role="alert"><b>Success!</b> You are logged in.</div>';
+    } elseif (!empty($err)) {
+        echo '<div class="alert alert-danger" role="alert"><b>Error:</b> ' . $err . '</div>';
     }
     ?>
+
     <div class="login-container">
         <h2 class="login-title">Login</h2>
         <form class="login-form" method="post" action="./Login.php">
@@ -144,8 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         </div>
     </div>
     <div>
-        <?php require "./Footer.php" ?>
-
+        <?php require "./Footer.php"; ?>
     </div>
 </body>
 
