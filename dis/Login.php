@@ -88,6 +88,10 @@
             <p>Don't have an account? <a href="./signup.php">Sign up</a></p>
         </div>
     </div>
+    <div>
+        <?php require "./Footer.php" ?>
+
+    </div>
 </body>
 
 </html>
