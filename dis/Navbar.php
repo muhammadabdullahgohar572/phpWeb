@@ -64,6 +64,13 @@
 </head>
 
 <body>
+    <?php
+    // session_start();
+    $logged = false;
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+        $logged = true;
+    }
+    ?>
     <nav class="navbar navbar-expand-lg custom-navbar-bg fixed">
         <div class="container-fluid p-4">
             <a class="navbar-brand" href="./index.php"><img src="../img/logo.png" alt="logo" width="200px"></a>
@@ -97,8 +104,12 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
+                    <?php if (!$logged): ?>
                     <a class="login-btn btn1" href="./Login.php">Login</a>
                     <a class="signup-btn btn1" href="./signup.php">Signup</a>
+                    <?php else: ?>
+                    <a class="login-btn btn1" href="./Logout.php">Logout</a>
+                    <?php endif; ?>
                 </form>
             </div>
         </div>
