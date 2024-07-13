@@ -1,16 +1,33 @@
 <?php
-
-
 session_start();
-
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
-
     header("location: ./Login.php");
     exit;
 }
 
+$showAlert = false;
+$showError = "";
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    include "../server/Severconnect.php";
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $company = $_POST['company'];
+    $message = $_POST['message'];
 
+    if (!empty($name) && !empty($phone) && !empty($message)) {
+        $sql = "INSERT INTO `contact` (`name`, `phone`, `company`, `message`) VALUES ('$name', '$phone', '$company', '$message')";
+        $result = mysqli_query($conn, $sql);
+        if ($result) {
+            $showAlert = true;
+        } else {
+            $showError = "Failed to submit your message. Please try again later.";
+        }
+    } else {
+        $showError = "Please fill in all the required fields.";
+    }
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +35,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
-
     <title>Contact Us</title>
-
     <style>
     body {
         background-color: #f8f9fa;
@@ -112,6 +127,12 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
 <body>
     <?php require "./Navbar.php" ?>
+    <?php if ($showAlert) {
+        echo '<div class="alert alert-success" role="alert"><b>Success!</b> Your message has been sent successfully.</div>';
+    } ?>
+    <?php if ($showError) {
+        echo '<div class="alert alert-danger" role="alert">' . $showError . '</div>';
+    } ?>
     <div class="contact-container">
         <div>
             <h2 class="contact-title">CONTACT US</h2>
@@ -126,7 +147,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             </div>
             <div class="contact-form">
                 <h3>GET IN TOUCH</h3>
-                <form>
+                <form method="post" action="./contactus.php">
                     <p><input type="text" name="name" placeholder="Name*" required></p>
                     <p><input type="email" name="email" placeholder="Email Address*" required></p>
                     <p><input type="tel" name="phone" placeholder="Phone*" required></p>
@@ -145,7 +166,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     </div>
     <div>
         <?php require "./Footer.php" ?>
-
     </div>
 </body>
 

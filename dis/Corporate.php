@@ -1,15 +1,39 @@
 <?php
-
-
 session_start();
-
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
-
     header("location: ./Login.php");
     exit;
 }
 
+$showAlert = false;
+$showError = "";
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    include "../server/Severconnect.php";// Make sure the path to your database connection script is correct
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $location = $_POST['location'];
+    $cars = $_POST['cars'];
+    $days = $_POST['days'];
+    $purpose = $_POST['purpose'];
+    $details = $_POST['details'];
+
+    if (!empty($name) && !empty($email) && !empty($phone) && !empty($location) && !empty($cars) && !empty($days) && !empty($purpose) && !empty($details)) {
+        $sql = "INSERT INTO corporate(`Name`, `EmailAddress`, `Phone`, `Location`, `NoCars`, `NoDays`, `PurposeEnquiry`, `Details`) VALUES ('$name', '$email', '$phone', '$location', '$cars', '$days', '$purpose', '$details')";
+   
+        $result = mysqli_query($conn, $sql);
+
+        if ($result) {
+            $showAlert = true;
+        } else {
+            $showError = "Failed to submit your enquiry. Please try again later.";
+        }
+    } else {
+        $showError = "Please fill in all the required fields.";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +41,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="../abdullagpnglogo-_convert.io_.svg" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate</title>
 </head>
@@ -81,7 +104,14 @@ body {
 
 <body>
     <?php require "./Navbar.php" ?>
-
+    <?php
+    if ($showAlert) {
+        echo '<div class="alert alert-success" role="alert">Your enquiry has been submitted successfully.</div>';
+    }
+    if ($showError) {
+        echo '<div class="alert alert-danger" role="alert">' . $showError . '</div>';
+    }
+    ?>
     <div class="enquiry-form">
         <h1>Corporate Enquiries</h1>
         <p>Please fill out the form below and our representatives will be in touch with you shortly</p>
@@ -113,9 +143,11 @@ body {
             <button type="submit">Submit</button>
         </form>
     </div>
+
+
+
     <div>
         <?php require "./Footer.php" ?>
-
     </div>
 </body>
 
