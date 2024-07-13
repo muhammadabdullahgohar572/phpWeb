@@ -17,6 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $result = mysqli_query($conn, $sql);
         if ($result) {
             $showAlert = true;
+            session_start();
+            $_SESSION['loggedin'] = true;
+            $_SESSION['username'] = $email;
+            header("location: ./index.php");
         } else {
             $showError = "Your Correct  Fill all feild ";
             $showAlert = false;
