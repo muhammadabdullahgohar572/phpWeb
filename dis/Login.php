@@ -1,3 +1,45 @@
+<?php
+
+
+
+
+$login = false;
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    include "../server/Severconnect.php";
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $sql = "SELECT * FROM login WHERE Email='$email' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+     if ($result) {
+        $num = mysqli_num_rows($result);
+        if ($num == 1) {
+            $login = true;
+            session_start();
+            $_SESSION['loggedin'] = true;
+            $_SESSION['username'] = $email;
+            header("location: ./index.php");
+        } else {
+            $err = "Error: " . mysqli_error($conn);
+            // echo $err;
+        }
+     }
+     else{
+        $err = "Error: ". mysqli_error($conn);
+         echo $err;
+     }
+} else {
+    if (!isset($conn)) {
+        $errr = "You must submit the form";
+        // echo $errr;
+    } else {
+        $errr = "Error: " . mysqli_error($conn);
+        // echo $errr;
+    }
+    // echo $errr;
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,10 +118,23 @@
 
 <body>
     <?php require "./Navbar.php" ?>
+    <?php
+    if ($login) {
+        echo '<div class="alert alert-success" role="alert">
+     <b>Success!</b>You are Logged in
+       </div>';
+    }
 
+    if (!$login) {
+
+        echo '<div class="alert alert-danger" role="alert">
+     <b>Error</b> Please Fill All filed.
+       </div>';
+    }
+    ?>
     <div class="login-container">
         <h2 class="login-title">Login</h2>
-        <form class="login-form">
+        <form class="login-form" method="post" action="./Login.php">
             <input type="email" name="email" placeholder="Email*" required>
             <input type="password" name="password" placeholder="Password*" required>
             <button type="submit">Login</button>
